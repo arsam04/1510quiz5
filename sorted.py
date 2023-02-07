@@ -2,16 +2,20 @@ def is_sorted(list):
     """
 
     :param List:
-    :return:
-    >>> unsorted_list = [5, 5, 5, 3]
-    >>> sorted_list = ["A", "B", "C", "a"]
-
+    :return: True if list is sorted
+    >>> unsorted_list = [5, 3, 2]
+    >>> sorted_list = [1, 2, 3]
+    >>> empty_list = []
     >>> is_sorted(unsorted_list)
     False
     >>> is_sorted(sorted_list)
     True
+    >>> is_sorted(empty_list)
+    False
     """
     index = 0
+    if list == [None]:
+        return False
     while index <= len(list) - 2:
         if list[index] > list[index + 1]:
             sorted_check = False
