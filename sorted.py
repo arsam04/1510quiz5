@@ -3,7 +3,7 @@ def is_sorted(list):
 
     :param List:
     :return:
-    >>> unsorted_list = [5, 5, 5,3]
+    >>> unsorted_list = [5, 5, 5, 3]
     >>> sorted_list = ["A", "B", "C", "a"]
 
     >>> is_sorted(unsorted_list)
